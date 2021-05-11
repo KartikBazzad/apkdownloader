@@ -1,0 +1,16 @@
+---
+application:
+  name: "apkdownloader"
+  project: "apkDownloader"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "ApkFiles"
+    size: "2000"
+    type: "slow_hdd"
+    mount_point: "/mnt/apkfiles"
+routers:
+- name: "main-apkdownloader"
+  routes:
+  - application_name: "apkdownloader"
+    paths:
+    - "/*"
